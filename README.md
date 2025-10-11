@@ -1,67 +1,59 @@
-<<<<<<< HEAD
-# 🌟 DSM Dev&Design
+# Code&Pixel 💻✨
 
-Bienvenidas y bienvenidos al sitio web oficial de **DSM Dev&Design**, un equipo apasionado por ayudar a emprendedores y marcas personales a destacarse en el mundo digital 💻✨
+**Impulsamos tu marca con creatividad y profesionalismo.**
 
-## 🎯 ¿Qué hacemos?
-
-En DSM Dev&Design ofrecemos soluciones creativas a medida:
-
-- 📱 Gestión de redes sociales
-- 🎨 Diseño gráfico y branding
-- 💻 Desarrollo web y automatizaciones
-- 📈 Asesoramiento en estrategia digital
-
-Todo con una estética única, moderna y accesible para que tu proyecto brille 🌈
+Code&Pixel es un proyecto web diseñado para acompañar a emprendedores y pequeños negocios en su presencia digital. Ofrecemos soluciones claras, accesibles y hechas a medida: desde identidad visual y diseño gráfico hasta desarrollo web y estrategias de marketing digital.
 
 ---
 
-## 🧪 Tecnologías utilizadas
+## 🌟 Características del proyecto
 
-- HTML5 + CSS3
-- Google Fonts (Montserrat)
-- AOS (Animate on Scroll Library)
-- Diseño responsive con estilo propio
-- Paleta: **Cian + Plata Elegante + Coral Suave**
-
----
-
-## 🌐 Demo online
-
-- 🔗 GitHub Pages: [https://nannys-cmd.github.io/dsm-devdesign/](https://nannys-cmd.github.io/dsm-devdesign/)
-- 🔗 Netlify: [https://dsm-devdesign.netlify.app/](https://dsm-devdesign.netlify.app/)
+- Diseño responsivo y moderno.
+- Secciones claras: Inicio, Nosotras, Servicios, Tarifario, Contacto.
+- Tarjetas de servicios y planes con estilo atractivo.
+- Botón flotante de WhatsApp para contacto directo.
+- Flecha flotante para volver al inicio.
+- Animaciones suaves con AOS.
+- Colores y tipografía profesional, con estilo cálido y amigable.
 
 ---
 
-## 📁 Estructura del proyecto
+## 🛠 Tecnologías utilizadas
 
-📦 dsm-devdesign/
-├── index.html
-├── style.css
-├── logo-dsm1.png
-└── README.md
-
----
-
-## 💡 Autoras
-
-**DSM** está formado por tres mujeres con pasión, talento y vocación de ayudar:
-
-- 💻 Daniela — Desarrollo web y automatizaciones
-- 🎨 Soledad — Diseño gráfico e identidad visual
-- 📲 Mariana — Marketing digital y comunicación
-
-> *"Impulsá tu marca con estrategia, diseño y corazón."*
+- HTML5
+- CSS3 (Flexbox, Grid, Animaciones)
+- JavaScript (vanilla)
+- AOS.js para animaciones on-scroll
+- Netlify para despliegue web
 
 ---
 
-## 🚀 ¿Querés sumarte?
+## 📂 Estructura del proyecto
 
-Podés contactarnos desde el sitio o por WhatsApp. ¡Nos encanta trabajar con personas reales, proyectos auténticos y sueños con propósito!
+/CodePixel
+│
+├─ index.html
+├─ style.css
+│─ logo-dsm1.png
+│─ fondo.png
+└─ README.md
 
 ---
 
-✨ Hecho con cariño, código limpio y mucha actitud.
-=======
-# code_pixel
->>>>>>> b730d3e611cfad75c6815e9c59e019780db40006
+## 🚀 Cómo ejecutar el proyecto
+
+1. Clonar el repositorio:  
+
+```bash
+git clone https://github.com/Nannys-cmd/code_pixel.git
+Abrir index.html en tu navegador.
+
+📞 Contacto
+
+Si querés ponerte en contacto con nosotras, podés hacerlo vía WhatsApp o enviando un mail a codepixel.cp@gmail.com.
+
+🎨 Autor
+
+Daniela Nannys – Desarrolladora Web Trainee & Diseñadora UX/UI
+
+Proyecto creado con 💖 como parte del portafolio personal.
