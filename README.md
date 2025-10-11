@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 🌟 DSM Dev&Design
 
 Bienvenidas y bienvenidos al sitio web oficial de **DSM Dev&Design**, un equipo apasionado por ayudar a emprendedores y marcas personales a destacarse en el mundo digital 💻✨
@@ -61,3 +62,6 @@ Podés contactarnos desde el sitio o por WhatsApp. ¡Nos encanta trabajar con pe
 ---
 
 ✨ Hecho con cariño, código limpio y mucha actitud.
+=======
+# code_pixel
+>>>>>>> b730d3e611cfad75c6815e9c59e019780db40006
