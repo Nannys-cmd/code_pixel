@@ -6,8 +6,7 @@
 }
 
 body {
-  background-color: #181818;
-  /* gris muy oscuro */
+  background-color: #181818; /* gris muy oscuro */
   color: #e5e5e5;
   line-height: 1.6;
   padding-top: 80px;
@@ -26,8 +25,7 @@ body {
 
 /* NAVBAR */
 .navbar {
-  background-color: #1a1a1a;
-  /* gris oscuro uniforme */
+  background-color: #1a1a1a; /* gris oscuro uniforme */
   position: fixed;
   top: 0;
   width: 100%;
@@ -56,16 +54,14 @@ body {
 
 .nav-links a {
   text-decoration: none;
-  color: #f8c0f8;
-  /* rosa pastel más visible */
+  color: #f8c0f8; /* rosa pastel más visible */
   font-weight: 500;
   text-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
   transition: color 0.3s ease;
 }
 
 .nav-links a:hover {
-  color: #f6a5c0;
-  /* rosa destacado */
+  color: #f6a5c0; /* rosa destacado */
 }
 
 /* HERO */
@@ -77,8 +73,7 @@ body {
 }
 
 .hero .container {
-  background-color: rgba(24, 24, 24, 0.75);
-  /* semitransparente suave */
+  background-color: rgba(24, 24, 24, 0.75); /* semitransparente suave */
   padding: 40px;
   border-radius: 12px;
   display: inline-block;
@@ -161,8 +156,7 @@ section p {
 
 .plan-card,
 .card {
-  background-color: #2a2a2a;
-  /* card oscuro para contraste */
+  background-color: #2a2a2a; /* card oscuro para contraste */
   border-left: 4px solid #f6a5c0;
   border-radius: 10px;
   padding: 24px;
@@ -189,7 +183,7 @@ section p {
   font-weight: bold;
 }
 
-/* EXTRAS */
+/* LISTA EXTRAS (si se usa) */
 .extras-list {
   list-style: none;
   padding-left: 0;
@@ -231,6 +225,183 @@ section p {
   background-color: #e791af;
   transform: scale(1.07);
   box-shadow: 0 0 20px #f6a5c0aa;
+}
+
+/* MODAL TARIFAS */
+.modal {
+  position: fixed;
+  inset: 0;
+  display: none; /* se muestra solo cuando tenga la clase .open */
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+.modal.open {
+  display: flex;
+}
+
+.modal-backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.65);
+}
+
+.modal-content {
+  position: relative;
+  background: #202020;
+  border-radius: 18px;
+  padding: 2rem;
+  max-width: 960px;
+  width: 90%;
+  max-height: 80vh;
+  overflow-y: auto;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.8);
+  z-index: 1;
+}
+
+.modal-content h2 {
+  margin-bottom: 0.5rem;
+}
+
+.modal-content h3 {
+  margin-top: 1.5rem;
+}
+
+.modal-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  border: none;
+  background: transparent;
+  color: #f6a5c0;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+/* CAJA PRINCIPAL DE TARIFAS (sección pricing) */
+.pricing .container {
+  text-align: center;
+}
+
+.pricing-box {
+  max-width: 760px;
+  margin: 0 auto;
+  background: #202020;
+  border-radius: 18px;
+  padding: 32px 24px 28px;
+  border: 1px solid rgba(246, 165, 192, 0.25);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.6);
+}
+
+.pricing-box h2 {
+  margin-bottom: 10px;
+}
+
+.pricing-lead {
+  font-size: 1.05rem;
+  margin-bottom: 6px;
+}
+
+.pricing-sub {
+  font-size: 0.98rem;
+  opacity: 0.9;
+}
+
+/* Botones de la sección de precios */
+.pricing-cta {
+  margin-top: 1.8rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.btn.btn-outline {
+  background: transparent;
+  border: 1px solid #f6a5c0;
+  color: #f6a5c0;
+}
+
+.btn.btn-outline:hover {
+  background-color: #f6a5c0;
+  color: #1b1b1b;
+}
+
+.note {
+  margin-top: 1.2rem;
+  font-size: 0.9rem;
+  opacity: 0.85;
+}
+
+/* Ajustes responsive para el modal y la caja de precios */
+@media (max-width: 768px) {
+  .modal-content {
+    padding: 1.5rem;
+    width: 95%;
+  }
+
+  .pricing-box {
+    padding: 24px 18px;
+  }
+
+  .pricing-cta {
+    flex-direction: column;
+  }
+
+  .pricing-cta .btn,
+  .pricing-cta .btn.btn-outline {
+    width: 100%;
+  }
+}
+
+/* Detalles de planes */
+.plans .card h3 {
+  margin-bottom: 0.5rem;
+}
+
+.plan-subtitle {
+  font-size: 0.95rem;
+  opacity: 0.9;
+}
+
+.plan-note {
+  margin: 0.75rem 0 1rem;
+  font-size: 0.9rem;
+}
+
+.plan-list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0 0 1rem;
+}
+
+.plan-list li::before {
+  content: "• ";
+  color: #f6a5c0;
+}
+
+.btn-small {
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+}
+
+/* Link "Ver precios orientativos" dentro de las cards */
+.plan-price-link {
+  margin-top: 0.75rem;
+  background: transparent;
+  border: none;
+  color: #f6a5c0;
+  font-size: 0.85rem;
+  text-decoration: underline;
+  cursor: pointer;
+  padding: 0;
+  display: inline-block;
+  opacity: 0.9;
+}
+
+.plan-price-link:hover {
+  opacity: 1;
 }
 
 /* FOOTER */

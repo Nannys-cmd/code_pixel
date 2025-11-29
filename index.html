@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -8,17 +9,18 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 </head>
-<body>
+
+<body id="top">
 
   <!-- NAVBAR -->
   <nav class="navbar">
     <div class="nav-container">
       <img src="logo-dsm1.png" alt="DSM Logo" class="logo" />
       <ul class="nav-links">
-        <li><a href="#">Inicio</a></li>
+        <li><a href="#top">Inicio</a></li>
         <li><a href="#about">Nosotras</a></li>
-        <li><a href="#services">Servicios</a></li>
-        <li><a href="#pricing">Tarifario</a></li>
+        <li><a href="#tarifario">Servicios</a></li>
+        <li><a href="#pricing">Tarifas</a></li>
         <li><a href="#contacto">Contacto</a></li>
       </ul>
     </div>
@@ -33,7 +35,7 @@
     </div>
   </header>
 
-  <!-- NOSOTRAS -->
+  <!--  ABOUT -->
   <section class="section" id="about" data-aos="fade-up">
     <div class="container">
       <h2>Quiénes somos</h2>
@@ -44,90 +46,137 @@
     </div>
   </section>
 
-  <!-- SERVICIOS -->
-  <section class="section services" id="services" data-aos="fade-up">
+  <!-- TARIFARIO / PRESUPUESTOS -->
+  <section class="section pricing" id="pricing" data-aos="fade-up">
     <div class="container">
-      <h2>Servicios</h2>
-      <p>Ofrecemos paquetes mensuales personalizados, servicios independientes y soluciones digitales adaptadas a vos.</p>
+      <div class="pricing-box">
+        <h2>💰 Tarifas y presupuestos</h2>
 
-      <h3>📅 Paquetes mensuales</h3>
-      <div class="plan-container">
-        <div class="plan-card">
-          <h4>📌 Plan Básico</h4>
-          <p>2-3 posteos/semana · Solo Instagram</p>
-          <p class="plan-price">$35.000 ARS</p>
-          <small>Ideal para emprendimientos chicos</small>
-        </div>
-        <div class="plan-card">
-          <h4>🚀 Plan Intermedio</h4>
-          <p>3-5 posteos/semana · IG + Facebook</p>
-          <p class="plan-price">$55.000 ARS</p>
-          <small>Incluye copywriting y moderación</small>
-        </div>
-        <div class="plan-card">
-          <h4>👑 Plan Pro</h4>
-          <p>7 posteos, reels, historias, atención al cliente</p>
-          <p class="plan-price">$75.000 ARS</p>
-          <small>Ideal para marcas con fuerte presencia</small>
-        </div>
-      </div>
+        <p class="pricing-lead">
+          Trabajamos con <strong>presupuestos personalizados</strong> según el tipo de proyecto,
+          su complejidad y los tiempos de entrega.
+        </p>
+        <p class="pricing-sub">
+          Contanos qué necesitás y te armamos una propuesta a medida, clara y sin sorpresas.
+        </p>
 
-      <div class="plan-container">
-        <div class="plan-card">
-          <h4>🎯 Extras</h4>
-          <ul class="extras-list">
-            <li>🔧 Branding / Identidad Visual<br><span>$28.000 – $35.000</span></li>
-            <li>📐 Diseño Canva (feed, plantillas)<br><span>$18.000 – $22.000</span></li>
-            <li>🧠 Asesorías puntuales<br><span>$5.000 – $8.000</span></li>
-            <li>📢 Gestión de pauta (ads)<br><span>10% – 20% del presupuesto</span></li>
-            <li>💌 Invitaciones digitales (cumpleaños, eventos)<br><span>$4.000 – $8.000</span></li>
-          </ul>
+        <div class="pricing-cta">
+          <button class="btn" id="btn-ver-tarifas">
+            Ver rangos orientativos
+          </button>
+
+          <a href="https://wa.me/5492616013999?text=Hola%20Code%26Pixel%2C%20quiero%20pedir%20un%20presupuesto%20😊"
+            class="btn btn-outline" target="_blank" rel="noopener">
+            Pedir presupuesto por WhatsApp
+          </a>
         </div>
 
-        <div class="plan-card">
-          <h4>❤️ Servicios por separado</h4>
-          <ul class="extras-list">
-            <li>✏️ Solo contenido<br><span>$30.000 – $50.000</span></li>
-            <li>💬 Solo comunidad<br><span>$20.000 – $35.000</span></li>
-            <li>📊 Solo estrategia<br><span>$15.000 – $25.000</span></li>
-            <li>🔁 Todo incluido (Plan Pro)<br><span>$75.000</span></li>
-          </ul>
-        </div>
+        <p class="note">
+          ✨ No es necesario que elijas un plan sola: te acompañamos a definir lo que mejor se adapta
+          a tu proyecto y a tu presupuesto.
+        </p>
       </div>
     </div>
   </section>
 
-  <!-- TARIFARIO -->
-  <section class="section pricing" id="pricing" data-aos="fade-up">
+  <!-- SERVICIOS / PAQUETES -->
+  <section class="section" id="tarifario" data-aos="fade-up">
     <div class="container">
-      <h2>💰 Tarifario detallado</h2>
-      <p>Precios base orientados a emprendedores/as. Todos los trabajos incluyen soporte básico y calidad profesional.</p>
-      <h3>🎨 Diseño gráfico y visual</h3>
-      <div class="card-container">
-        <div class="card"><h4>Logo básico</h4><p>4 versiones (B/N y fondo)</p><span>$9.000 – $11.000</span></div>
-        <div class="card"><h4>Logo personalizado</h4><p>6 versiones + color especial</p><span>$12.000 – $15.000</span></div>
-        <div class="card"><h4>Flyer digital</h4><p>Para redes o impresión</p><span>$4.000 – $6.000</span></div>
-        <div class="card"><h4>Flyer animado</h4><p>GIF o video con música</p><span>$6.000 – $8.000</span></div>
-        <div class="card"><h4>Catálogo digital</h4><p>PDF (5-10 páginas)</p><span>$10.000 – $15.000</span></div>
-        <div class="card"><h4>CV sin foto</h4><p>Diseño en JPG y PDF</p><span>$2.500 – $3.000</span></div>
-        <div class="card"><h4>CV con foto</h4><p>Incluye edición básica</p><span>$3.500 – $4.000</span></div>
-        <div class="card"><h4>Invitaciones digitales</h4><p>Cumpleaños, eventos, baby shower</p><span>$4.000 – $8.000</span></div>
+      <h2>📅 Paquetes mensuales</h2>
+      <p>
+        Elegimos junto a vos el plan que mejor se adapta a tu proyecto,
+        tu audiencia y el tiempo que tengas para crear contenido.
+      </p>
+
+      <div class="card-container plans">
+        <!-- Plan Básico -->
+        <article class="card">
+          <h3>Plan Básico</h3>
+          <p class="plan-subtitle">2-3 posteos por semana · Solo Instagram</p>
+          <p class="plan-note">Ideal para emprendimientos chicos que quieren empezar a mostrarse.</p>
+
+          <a
+            href="https://wa.me/5492616013999?text=Hola%20Code%26Pixel%2C%20me%20interesa%20el%20Plan%20B%C3%A1sico%20de%20redes%20sociales%20%E2%9C%A8"
+            class="btn btn-small" target="_blank" rel="noopener">
+            Quiero este plan
+          </a>
+
+          <button type="button" class="plan-price-link ver-precios-plan">
+            Ver precios orientativos
+          </button>
+        </article>
+
+        <!-- Plan Intermedio -->
+        <article class="card">
+          <h3>Plan Intermedio</h3>
+          <p class="plan-subtitle">3-5 posteos por semana · IG + Facebook</p>
+          <p class="plan-note">
+            Incluye copywriting y moderación básica. Ideal para marcas que ya tienen comunidad.
+          </p>
+
+          <a
+            href="https://wa.me/5492616013999?text=Hola%20Code%26Pixel%2C%20quiero%20informaci%C3%B3n%20sobre%20el%20Plan%20Intermedio%20de%20redes%20%F0%9F%93%B2"
+            class="btn btn-small" target="_blank" rel="noopener">
+            Quiero este plan
+          </a>
+
+          <button type="button" class="plan-price-link ver-precios-plan">
+            Ver precios orientativos
+          </button>
+        </article>
+
+        <!-- Plan Pro -->
+        <article class="card">
+          <h3>Plan Pro</h3>
+          <p class="plan-subtitle">7 posteos, reels, historias y atención al cliente</p>
+          <p class="plan-note">
+            Pensado para marcas con presencia fuerte que necesitan estrategia y constancia.
+          </p>
+
+          <a
+            href="https://wa.me/5492616013999?text=Hola%20Code%26Pixel%2C%20me%20gustar%C3%ADa%20cotizar%20el%20Plan%20Pro%20%F0%9F%92%AA"
+            class="btn btn-small" target="_blank" rel="noopener">
+            Quiero este plan
+          </a>
+
+          <button type="button" class="plan-price-link ver-precios-plan">
+            Ver precios orientativos
+          </button>
+        </article>
       </div>
 
-      <h3>💻 Desarrollo web</h3>
-      <div class="card-container">
-        <div class="card"><h4>Landing page</h4><p>1 sección, WhatsApp y links</p><span>$65.000 – $75.000</span></div>
-        <div class="card"><h4>Sitio web básico</h4><p>Hasta 4 secciones</p><span>$80.000 – $90.000</span></div>
-        <div class="card"><h4>Web intermedia</h4><p>Catálogo o formulario</p><span>$95.000 – $110.000</span></div>
-        <div class="card"><h4>Web administrable</h4><p>Con panel editable</p><span>$120.000 – $140.000</span></div>
-      </div>
+      <div class="card-container extras">
+        <!-- Extras -->
+        <article class="card">
+          <h3>Extras</h3>
+          <ul class="plan-list">
+            <li>Branding / identidad visual</li>
+            <li>Diseños Canva para feed y stories</li>
+            <li>Asesorías puntuales 1:1</li>
+            <li>Gestión de pauta (ads)</li>
+            <li>Invitaciones digitales (cumples, eventos, etc.)</li>
+          </ul>
+          <a href="https://wa.me/5492616013999?text=Hola%20Code%26Pixel%2C%20quiero%20consultar%20por%20servicios%20extra%20%F0%9F%8E%A8"
+            class="btn btn-small btn-outline" target="_blank" rel="noopener">
+            Ver opciones
+          </a>
+        </article>
 
-      <h3>📲 Automatización & marketing</h3>
-      <div class="card-container">
-        <div class="card"><h4>Optimización de Instagram</h4><p>Bio, links, destacados</p><span>$6.000 – $8.000</span></div>
-        <div class="card"><h4>Automatización simple</h4><p>Python o JS: backups, texto</p><span>$7.000 – $10.000</span></div>
+        <!-- Servicios por separado -->
+        <article class="card">
+          <h3>Servicios por separado</h3>
+          <ul class="plan-list">
+            <li>Solo contenido (creación de piezas)</li>
+            <li>Solo comunidad (respuestas y mensajes)</li>
+            <li>Solo estrategia (plan de contenidos)</li>
+            <li>Plan a medida según tu necesidad</li>
+          </ul>
+          <a href="https://wa.me/5492616013999?text=Hola%20Code%26Pixel%2C%20quiero%20un%20servicio%20a%20medida%20para%20mis%20redes%20%F0%9F%8C%9F"
+            class="btn btn-small btn-outline" target="_blank" rel="noopener">
+            Pedir propuesta
+          </a>
+        </article>
       </div>
-      <p class="note">💳 Todos los trabajos requieren seña previa. Entrega final tras el pago completo.</p>
     </div>
   </section>
 
@@ -137,12 +186,193 @@
       <h2>Contacto</h2>
       <p>¿Querés que te ayudemos con tu marca? Podés escribirnos por WhatsApp o enviarnos un mail directamente:</p>
       <div class="contact-buttons">
-        <a href="mailto:codepixel.cp@gmail.com?subject=Consulta%20sobre%20Code%26Pixel&body=Hola%20Code%26Pixel%2C%0A%0AQuisiera%20consultar%20sobre%20sus%20servicios..." class="btn email-btn">
+        <a href="mailto:codepixel.cp@gmail.com?subject=Consulta%20sobre%20Code%26Pixel&body=Hola%20Code%26Pixel%2C%0A%0AQuisiera%20consultar%20sobre%20sus%20servicios..."
+          class="btn email-btn">
           📧 Enviános un mail
         </a>
       </div>
     </div>
   </section>
+
+  <!-- MODAL DE TARIFAS ORIENTATIVAS -->
+  <div class="modal" id="modal-tarifas">
+    <div class="modal-backdrop" id="modal-backdrop"></div>
+
+    <div class="modal-content">
+      <button class="modal-close" id="modal-cerrar">✖</button>
+
+      <h2>💰 Tarifas orientativas</h2>
+      <p>
+        Estos precios sirven como guía para que tengas una idea del valor de nuestros servicios.
+        El presupuesto final se define según tu proyecto, siempre con transparencia y en base a lo que realmente
+        necesitás.
+      </p>
+
+      <!-- 🎨 Diseño gráfico y visual -->
+      <h3>🎨 Diseño gráfico y visual</h3>
+      <div class="card-container">
+        <div class="card">
+          <h4>Logo básico</h4>
+          <p>4 versiones (B/N y fondo)</p>
+          <span>$22.000 – $30.000 ARS</span>
+        </div>
+        <div class="card">
+          <h4>Logo personalizado</h4>
+          <p>6 versiones + color especial</p>
+          <span>$35.000 – $50.000 ARS</span>
+        </div>
+        <div class="card">
+          <h4>Flyer digital</h4>
+          <p>Para redes o impresión</p>
+          <span>$6.000 – $10.000 ARS</span>
+        </div>
+        <div class="card">
+          <h4>Flyer animado</h4>
+          <p>GIF o video corto con música</p>
+          <span>$9.000 – $14.000 ARS</span>
+        </div>
+        <div class="card">
+          <h4>Catálogo digital</h4>
+          <p>PDF (5–10 páginas)</p>
+          <span>$25.000 – $40.000 ARS</span>
+        </div>
+        <div class="card">
+          <h4>CV sin foto</h4>
+          <p>Diseño en JPG y PDF</p>
+          <span>$6.000 – $8.000 ARS</span>
+        </div>
+        <div class="card">
+          <h4>CV con foto</h4>
+          <p>Incluye edición básica</p>
+          <span>$7.000 – $9.000 ARS</span>
+        </div>
+        <div class="card">
+          <h4>Invitaciones digitales</h4>
+          <p>Cumpleaños, eventos, baby shower</p>
+          <span>$5.000 – $8.000 ARS</span>
+        </div>
+      </div>
+
+      <!-- 💻 Desarrollo web -->
+      <h3>💻 Desarrollo web</h3>
+      <div class="card-container">
+        <div class="card">
+          <h4>Landing page</h4>
+          <p>1 sección, WhatsApp y links</p>
+          <span>$80.000 – $110.000 ARS</span>
+        </div>
+        <div class="card">
+          <h4>Sitio web básico</h4>
+          <p>Hasta 4 secciones</p>
+          <span>$120.000 – $160.000 ARS</span>
+        </div>
+        <div class="card">
+          <h4>Web intermedia</h4>
+          <p>Catálogo o formulario de consultas</p>
+          <span>$160.000 – $220.000 ARS</span>
+        </div>
+        <div class="card">
+          <h4>Web administrable</h4>
+          <p>Con panel editable / gestor de contenido</p>
+          <span>$230.000 – $320.000 ARS</span>
+        </div>
+      </div>
+
+      <!-- 📲 Automatización & marketing -->
+      <h3>📲 Automatización & marketing</h3>
+      <div class="card-container">
+        <div class="card">
+          <h4>Optimización de Instagram</h4>
+          <p>Bio, links, destacados, estética general</p>
+          <span>$12.000 – $20.000 ARS</span>
+        </div>
+        <div class="card">
+          <h4>Automatización simple</h4>
+          <p>Python o JS: backups, textos, tareas repetitivas</p>
+          <span>$15.000 – $30.000 ARS</span>
+        </div>
+      </div>
+
+      <!-- 📅 Paquetes de redes -->
+      <h3>📅 Paquetes mensuales de gestión de redes</h3>
+      <div class="card-container">
+        <div class="card">
+          <h4>Plan Básico</h4>
+          <p>2–3 posteos/semana · Solo Instagram</p>
+          <span>$65.000 – $85.000 ARS / mes</span>
+        </div>
+        <div class="card">
+          <h4>Plan Intermedio</h4>
+          <p>3–5 posteos/semana · IG + Facebook</p>
+          <span>$95.000 – $120.000 ARS / mes</span>
+        </div>
+        <div class="card">
+          <h4>Plan Pro</h4>
+          <p>7 posteos, reels, historias, atención al cliente</p>
+          <span>$140.000 – $180.000 ARS / mes</span>
+        </div>
+      </div>
+
+      <!-- ✨ Extras -->
+      <h3>✨ Extras</h3>
+      <div class="card-container">
+        <div class="card">
+          <h4>Branding / Identidad Visual</h4>
+          <p>Logo + paleta + piezas base</p>
+          <span>$60.000 – $90.000 ARS</span>
+        </div>
+        <div class="card">
+          <h4>Diseño Canva (feed, plantillas)</h4>
+          <p>Pack de piezas reutilizables</p>
+          <span>$25.000 – $40.000 ARS</span>
+        </div>
+        <div class="card">
+          <h4>Asesorías puntuales</h4>
+          <p>Sesiones individuales por videollamada</p>
+          <span>$10.000 – $18.000 ARS</span>
+        </div>
+        <div class="card">
+          <h4>Gestión de pauta (ads)</h4>
+          <p>Configuración y seguimiento básico</p>
+          <span>10% – 20% del presupuesto invertido</span>
+        </div>
+        <div class="card">
+          <h4>Invitaciones digitales</h4>
+          <p>Cumpleaños, eventos, baby shower</p>
+          <span>$5.000 – $8.000 ARS</span>
+        </div>
+      </div>
+
+      <!-- 📌 Servicios por separado -->
+      <h3>📌 Servicios por separado</h3>
+      <div class="card-container">
+        <div class="card">
+          <h4>Solo contenido</h4>
+          <p>Creación de piezas y copies</p>
+          <span>$60.000 – $90.000 ARS / mes</span>
+        </div>
+        <div class="card">
+          <h4>Solo comunidad</h4>
+          <p>Respuestas, mensajes y comentarios</p>
+          <span>$40.000 – $70.000 ARS / mes</span>
+        </div>
+        <div class="card">
+          <h4>Solo estrategia</h4>
+          <p>Plan mensual de contenidos</p>
+          <span>$40.000 – $65.000 ARS</span>
+        </div>
+        <div class="card">
+          <h4>Todo incluido (referencia Plan Pro)</h4>
+          <p>Estrategia + contenido + comunidad</p>
+          <span>$150.000 – $220.000 ARS / mes</span>
+        </div>
+      </div>
+
+      <p class="note">
+        💳 Todos los trabajos requieren seña previa. La entrega final se realiza tras el pago completo.
+      </p>
+    </div>
+  </div>
 
   <!-- FOOTER -->
   <footer>
@@ -150,11 +380,61 @@
   </footer>
 
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
   <script>
     AOS.init();
-    function abrirPopup(){document.getElementById('whatsapp-popup').style.display='block';}
-    function cerrarPopup(){document.getElementById('whatsapp-popup').style.display='none';}
-    window.addEventListener('scroll',()=>document.body.classList.toggle('scrolled',window.scrollY>300));
+
+    // Popup WhatsApp
+    function abrirPopup() {
+      document.getElementById('whatsapp-popup').style.display = 'block';
+    }
+    function cerrarPopup() {
+      document.getElementById('whatsapp-popup').style.display = 'none';
+    }
+
+    // Efecto navbar al hacer scroll
+    window.addEventListener('scroll', () =>
+      document.body.classList.toggle('scrolled', window.scrollY > 300)
+    );
+
+    // Modal tarifas
+    const btnVerTarifas = document.getElementById('btn-ver-tarifas');
+    const modalTarifas = document.getElementById('modal-tarifas');
+    const modalCerrar = document.getElementById('modal-cerrar');
+    const modalBackdrop = document.getElementById('modal-backdrop');
+    const linksPreciosPlanes = document.querySelectorAll('.ver-precios-plan');
+
+    function abrirModalTarifas() {
+      if (modalTarifas) {
+        modalTarifas.classList.add('open');
+        document.body.style.overflow = 'hidden';
+      }
+    }
+
+    function cerrarModalTarifas() {
+      if (modalTarifas) {
+        modalTarifas.classList.remove('open');
+        document.body.style.overflow = '';
+      }
+    }
+
+    if (btnVerTarifas) {
+      btnVerTarifas.addEventListener('click', abrirModalTarifas);
+    }
+
+    if (modalCerrar) {
+      modalCerrar.addEventListener('click', cerrarModalTarifas);
+    }
+
+    if (modalBackdrop) {
+      modalBackdrop.addEventListener('click', cerrarModalTarifas);
+    }
+
+    if (linksPreciosPlanes.length > 0) {
+      linksPreciosPlanes.forEach(link => {
+        link.addEventListener('click', abrirModalTarifas);
+      });
+    }
   </script>
 
   <!-- BOTÓN FLOTANTE DE WHATSAPP -->
@@ -163,7 +443,9 @@
       <span>Contactanos por WhatsApp 📱</span>
       <button onclick="cerrarPopup()">✖</button>
     </div>
-    <ul><li><a href="https://wa.me/5492616013999" target="_blank">📞 Daniela</a></li></ul>
+    <ul>
+      <li><a href="https://wa.me/5492616013999" target="_blank">📞 Daniela</a></li>
+    </ul>
   </div>
   <button class="whatsapp-float" onclick="abrirPopup()">💬 WhatsApp</button>
 
@@ -171,4 +453,5 @@
   <a href="#top" class="scroll-top" title="Volver al inicio">⬆</a>
 
 </body>
+
 </html>
